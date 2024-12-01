@@ -87,7 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             This project demonstrates expertise in Python development, 
                             library creation and object-oriented design.
                 <div class="popup-links">
-                    <a href="#" style="color: rgb(6, 48, 42); text-decoration: none; text-align:center;" target="_blank"><b>GitHub Repository</b></a>
+                    <a href="https://github.com/Sri-code23/PROJECT/tree/master/Library_project" style="color: rgb(6, 48, 42); text-decoration: none; text-align:center;" target="_blank">
+                    <button class="view_button" ><b>GitHub Repository</b><button></a>
                 </div>
                 </div>
             `,
@@ -100,7 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             including temperature, humidity, and air quality, to provide real-time insights and display the information locally and remotely through the Blynk app.
                             This project demonstrates expertise in IoT development, data analysis, and communication.
                 <div class="popup-links">
-                    <a href="#" style="color: rgb(6, 48, 42);text-decoration: none;" style="text-align: center;" target="_blank"><b>GitHub Repository</b></a>
+                    <a href="" style="color: rgb(6, 48, 42);text-decoration: none;" style="text-align: center;" target="_blank">
+                    <button class="view_button" ><b>GitHub Repository</b><button></a>
                 </div>
             </div>
             `,
@@ -113,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             ensuring operational efficiency and safety. 
                             This project demonstrates expertise in hardware integration and automation.
                 <div class="popup-links">
-                    <a href="#" style="color: rgb(6, 48, 42); text-decoration: none; text-align: center;" target="_blank"><b>GitHub Repository</b></a>
+                    <a href="" style="color: rgb(6, 48, 42); text-decoration: none; text-align: center;" target="_blank">
+                    <button class="view_button" ><b>GitHub Repository</b><button></a>
                 </div>
             </div>
             `
@@ -124,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getBlogContent(blogId) {
         const blogContents = {
             blog1: `
+            <div>
                 <img src="python_blog.jpg" alt="Blog 1" class="popup-image">
                 <h2>The Journey of Building My First Python Library – QuotesEngine</h2>
                 <p>As a passionate programmer, I have always sought opportunities to create something unique and useful. This drive led me to develop QuotesEngine, my very first Python library. The journey was challenging yet incredibly fulfilling, as it allowed me to combine creativity with technical expertise.
@@ -134,11 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h3>Reflection:</h3>
                 This project was more than just coding; it was about perseverance and learning. It introduced me to the world of open-source development and inspired me to contribute more in the future.
                 </p>
-                <div class="popup-links">
-                    <a href="index.html#projects" style="color: rgb(6, 48, 42);text-decoration: none;" target="_blank"><b> View project</b></a>
-                </div>
+            </div>
             `,
             blog2: `
+            <div class="popup-links">
                 <img src="blog_board.jpg" alt="Blog 2" class="popup-image">
                 <h2>Innovating Safety in Industries – The Counter with Overload Alert System</h2>
                 <p><h3>Introduction:</h3>
@@ -149,25 +152,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <h3>Impact:</h3>
                 The project was well-received by external evaluators for its practicality and potential real-world applications. It remains a testament to my problem-solving abilities and passion for developing impactful solutions.
-                </p><div class="popup-links">
-                    <a href="#" style="color: rgb(6, 48, 42);" target="_blank"> project </a>
+                </p>
+                    
                 </div>
             `,
             blog3: `
+            <div class="popup-links">
                 <img src="iot_board.jpg" alt="Blog 3" class="popup-image">
                 <h2>Embracing IoT – The Smart Air Quality Management System</h2>
                 <p><h3>Introduction:</h3>
                 The rise of IoT has opened doors to countless possibilities, and I wanted to explore this realm through a meaningful project. The Smart Air Quality Management System is one of my proudest achievements, addressing the need for real-time environmental monitoring in industries.
-
                 <h3>The Solution:</h3>
                 Using an ESP32 microcontroller and sensors like MQ4, I developed a system to monitor air quality and temperature. The data is displayed locally and remotely through the Blynk app, enabling users to take proactive measures to ensure safety.
-
                 <h3>The Experience:</h3>
                 This project expanded my knowledge of IoT, sensor integration, and remote monitoring. It also reinforced the importance of technology in creating sustainable and safe environments.
-
                 </p>
-                <div class="popup-links">
-                    <a href="#" style="color: rgb(6, 48, 42);" target="_blank"> project </a>
                 </div>
             `
         };

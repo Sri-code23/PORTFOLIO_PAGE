@@ -1,9 +1,9 @@
 :root {
     --bg-color: #000000;
     --text-color: #ffffff;
-    --accent-color:  #235745;
+    --accent-color:  #646464;
     --secondary-bg: #000000;
-    --hover-color: #17996e;
+    --hover-color: #108f64;
 }
 
 
@@ -47,10 +47,56 @@ body::-webkit-scrollbar-track{
     border-radius: 10px;
 }
 
+#arrow_button{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 34px;
+    cursor: pointer;
+}
 
 
+.viewbutton{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 7px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+    border:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 1px var(--text-color);
+}
 
+.viewbutton:hover{
+    background-color: var(--hover-color);
+    color: var(--bg-color);
+    transition: transform 0.3s ease-in-out;
+    transform:translateY(1px);
+}
 
+.view_button{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 7px 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+    border:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 5px var(--accent-color);
+}
+
+.view_button:hover{
+    background-color: var(--hover-color);
+    transition: transform 0.3s ease-in-out;
+    transform:translateY(1px);
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,8 +110,7 @@ header {
     width: 100%;
     z-index: 10;
     margin-top: 0%;
-    backdrop-filter:blur(10px);
-    color: rgb(0, 0, 0);
+    
 }
 
 nav {
@@ -79,7 +124,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
 }
 
 #certication_headings{
@@ -98,7 +143,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 .theme-switch {
@@ -111,10 +156,11 @@ nav {
     position: relative;
     display: inline-block;
     width: 54px;
-    height: 25px;
-    background-color: rgb(167, 167, 167);
+    height: 28px;
+    bottom: 1px;
+    background-color: var(--text-color);
     border-radius: 34px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .switch::before {
@@ -122,11 +168,11 @@ nav {
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 5px;
-    bottom: 3px;
-    background-color: rgb(0, 0, 0);
+    left: 4px;
+    bottom: 5px;
+    background-color:var(--bg-color);
     border-radius: 50%;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 #theme-toggle {
@@ -171,18 +217,24 @@ h1, h2 {
     padding: 1% 0;
     font-size: 30px;
 }
+
 #home {
     text-align: center;
     padding: 6rem 0;
 }
 
 .profile-image img {
-    background-image:url("PROFILE_PIC.jpg");
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+}
+
+.profile-image img:hover{
+    transform: translateY(2px);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px var(--text-color);
 }
 
 .bio h1 {
@@ -209,8 +261,9 @@ h1, h2 {
 }
 
 .skill-block:hover {
-    transform: translateY(-3px);
-    color: var(--accent-color);
+    transform: translateY(-1px);
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .skill-block i {
@@ -235,7 +288,9 @@ h1, h2 {
 
 .project-item:hover, .blog-item:hover {
     transform: translateY(-1px);
-    color: var(--accent-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition: transform 0.3s ease-in-out;
     box-shadow: 2px 3px 10px  #131313;
 }
 
@@ -249,8 +304,8 @@ h1, h2 {
 
 .btn {
     display: flex;
-    background-color: var(--accent-color);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     padding: 0.5rem 1rem;
     margin-left: 30%;
     margin-right: 30%;
@@ -331,12 +386,13 @@ h1, h2 {
 
 
 footer {
-    background-color: var(--secondary-bg);
+    background-color: var(--bg-color);
     text-align: center;
-    padding: 1rem 0;
+    margin-top: 1%;
     width: 100%;
     font-size:medium;
-    padding-top: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #popup-overlay {
@@ -349,7 +405,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(100px);
     z-index: 2000;
 }
 
@@ -379,7 +435,7 @@ footer {
 }
 
 #popup-content::-webkit-scrollbar-thumb:hover {
-    background-color:rgb(19, 110, 83) ;
+    background-color:rgb(170, 170, 170) ;
 }
 
 #popup-content::-webkit-scrollbar-track{
@@ -395,6 +451,13 @@ footer {
     margin-bottom: 1rem;
 }
 
+.popup-image:hover{
+    transition: transform 0.5s ease-in-out;
+    transform:translateY(-1px);
+
+}
+
+
 #close-popup {
     position: absolute;
     top: 10px;
@@ -402,7 +465,7 @@ footer {
     background: none;
     border: none;
     color: var(--text-color);
-    font-size: 24px;
+    font-size: 34px;
     cursor: pointer;
 }
 
@@ -450,13 +513,15 @@ body.light-mode {
     /**/sample
     
     .theme-switch {
-        top: 5rem;
+        top: 4.5rem;
         right:3rem;
     }
     .switch {
         width: 36px;
         height: 22px;
-        background-color: rgb(167, 167, 167);
+        top: 1px;
+        background-color:var(--text-color);
+        color: var(--bg-color);
         border-radius: 34px;
         transition: background-color 0.3s;
     }
@@ -464,7 +529,7 @@ body.light-mode {
         width: 17px;
         height: 17px;
         right: 10px;
-        bottom: 1.px;
+        bottom: 2px;
        
     }
     #theme-toggle:checked + .switch::before {
@@ -506,7 +571,7 @@ body.light-mode {
     #popup-content {
         min-width: 100%;
         max-height: 65%;
-        padding-left: 5%;
+
     }
 }
 
@@ -535,6 +600,7 @@ body.light-mode {
 
     #popup-content {
         padding: 1.5rem;
+        border-radius: 10px;
     }
 
     .btn {
@@ -546,12 +612,14 @@ body.light-mode {
 }
 
 .testimonial {
-    margin: 20px 0;
+    margin: 20px 10px;
     background-color: var(--secondary-bg);
     padding: 20px;
     border-radius: 8px;
 }
 
 .testimonial p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
 }
