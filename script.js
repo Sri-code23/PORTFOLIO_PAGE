@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const projectContents = {
             project1: `
                 <div class="popupcontent">
-                <img src="library_py.jpg" alt="Project 1" class="popup-image">
+                <img src="assets/library_py.jpg" alt="Project 1" class="popup-image">
                 <h2>QuotesEngine - Python library</h2>
                 <p>Created a Python library for generating quotes,
                             providing features like random quote generation.
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             project2: `
             <div class="popupcontent">
-                <img src="factory.jpeg" alt="Project 2" class="popup-image">
+                <img src="assets/factory.jpeg" alt="Project 2" class="popup-image">
                 <h2>Smart Air Quality Management System</h2>
                 <p>Developed an IoT- based solution to monitor air quality in industrial environments.
                             The system collects and analyzes data from various sensors, 
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             project3: `
             <div class="popupcontent">
-                <img src="blog_safety.jpg" alt="Project 3" class="popup-image">
+                <img src="assets/blog_safety.jpg" alt="Project 3" class="popup-image">
                 <h2>Counter with overload Alert System</h2>
                 <p>Designed and implemented an automated system to monitor item counts in real-time. 
                             The system triggers an alert when the count exceeds a predefined threshold, 
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const blogContents = {
             blog1: `
             <div>
-                <img src="python_blog.jpg" alt="Blog 1" class="popup-image">
+                <img src="assets/python_blog.jpg" alt="Blog 1" class="popup-image">
                 <h2>The Journey of Building My First Python Library – QuotesEngine</h2>
                 <p>As a passionate programmer, I have always sought opportunities to create something unique and useful. This drive led me to develop QuotesEngine, my very first Python library. The journey was challenging yet incredibly fulfilling, as it allowed me to combine creativity with technical expertise.
 
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             blog2: `
             <div class="popup-links">
-                <img src="blog_board.jpg" alt="Blog 2" class="popup-image">
+                <img src="assets/blog_board.jpg" alt="Blog 2" class="popup-image">
                 <h2>Innovating Safety in Industries – The Counter with Overload Alert System</h2>
                 <p><h3>Introduction:</h3>
                 Industrial safety is a critical concern, and I wanted to address it through an innovative project during my academic journey. This led to the creation of the Counter with Overload Alert System, a solution aimed at improving efficiency and safety in industrial operations.
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             blog3: `
             <div class="popup-links">
-                <img src="iot_board.jpg" alt="Blog 3" class="popup-image">
+                <img src="assets/iot_board.jpg" alt="Blog 3" class="popup-image">
                 <h2>Embracing IoT – The Smart Air Quality Management System</h2>
                 <p><h3>Introduction:</h3>
                 The rise of IoT has opened doors to countless possibilities, and I wanted to explore this realm through a meaningful project. The Smart Air Quality Management System is one of my proudest achievements, addressing the need for real-time environmental monitoring in industries.
