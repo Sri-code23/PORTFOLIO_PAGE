@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getBlogContent(blogId) {
         const blogContents = {
             blog1: `
-            <div>
+            <div class="popup-links">
                 <img src="assets/python_blog.jpg" alt="Blog 1" class="popup-image">
                 <h2>The Journey of Building My First Python Library – QuotesEngine</h2>
                 <p>As a passionate programmer, I have always sought opportunities to create something unique and useful. This drive led me to develop QuotesEngine, my very first Python library. The journey was challenging yet incredibly fulfilling, as it allowed me to combine creativity with technical expertise.
