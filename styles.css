@@ -501,8 +501,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter:blur(800px);
-    z-index: 2000;
+    backdrop-filter:blur(10px);
+    z-index: 20;
 }
 
 #popup-content {
@@ -727,6 +727,10 @@ body.light-mode {
         border-radius: 5px;
         margin-bottom: 0.5rem;
         box-shadow: 1px 1px 1px var(--bg-color);
+    }
+
+    .popup-links{
+        display:block;
     }
 
     .skills-container {

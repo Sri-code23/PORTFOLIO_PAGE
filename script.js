@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             The library includes features like quote categories and more.
                             This project demonstrates expertise in Python development, 
                             library creation and object-oriented design.
-                <div class="popup-links">
-                    <a href="https://github.com/Sri-code23/PROJECT/tree/master/Library_project" style="color: rgb(6, 48, 42); text-decoration: none; text-align:center;" target="_blank">
-                    <button class="view_button" ><b>GitHub Repository</b><button></a>
-                </div>
+                    <div class="popup-links">
+                        <a href="https://github.com/Sri-code23/PROJECT/tree/master/Library_project" style="color: rgb(6, 48, 42); text-decoration: none; text-align:center;" target="_blank">
+                        <button class="view_button"><b>GitHub Repository</b><button></a>
+                    </div>
                 </div>
             `,
             project2: `
